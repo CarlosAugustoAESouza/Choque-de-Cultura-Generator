@@ -4,7 +4,7 @@ O **Choque Generator™** é uma ferramenta extremamente útil que vai te ajudar
 
 O **Choque Generator™** é uma brincadeira escrita em JavaScript que busca um punhado de frases do programa [Choque de Cultura](https://www.youtube.com/user/tvquase "Choque de Cultura") aleatoriamente. Você pode nos ajudar com sugestões, correção de bugs, incremento de funcionalidades e até mesmo com a adição de novas frases na base.
 
-Acesse o **Choque Generator™** clicando **[AQUI](https://choquegenerator.com.br "Choque Generator")**.
+Acesse o **Choque Generator™** clicando **[AQUI](http://www.choquegenerator.com.br "Choque Generator")**.
 
 Nossas Redes Sociais
 ----------
