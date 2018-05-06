@@ -1,0 +1,14 @@
+version: '2'
+services:
+  choque-de-cultura-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node_modules/.bin/nodemon --exec npm start
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    volumes:
+     - .:/home/app/choque-de-cultura-generator
+     - /home/app/choque-de-cultura-generator/node_modules

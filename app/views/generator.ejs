@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<% include head %>
+</head>
+
+<body>
+	<nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-background-primary uk-light uk-margin-remove-bottom" style="background-image: url(img/application/bg-top.jpg)">
+		<% include nav %>
+	</nav>
+
+	<div class="uk-container container-xs uk-section-center">
+		<% if(typeof(frases) != 'undefined') { %>
+		<p class="uk-article-title uk-margin-bottom center"><%= frases %></p>
+		<% } else if(typeof(paragrafos) != 'undefined') { %>
+		<p class="uk-text-lead"><%= paragrafos %></p>
+		<% } else if(typeof(textao) != 'undefined') { %>
+		<div class="uk-section section-sub-nav uk-padding-remove">
+			<div uk-grid>
+				<div class="uk-width-1-1@m">
+					<div class="uk-margin">
+						<form action="/textao" method="post" class="uk-search uk-search-default">
+							<input type="submit" class="uk-search-icon-flip" uk-search-icon value="">
+							<input name="quantidade" type="number" min="2" max="100" placeholder="Quantas frases você quer?" required="" class="uk-search-input">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p><%= textao %></p>
+		<% } else{ %>
+		<h2><%= frases %></h2>
+		<% } %>
+	</div>
+
+	<% include actions %>
+
+	<% include bottom %>
+
+	<% include footer %>
+</body>
+
+</html>

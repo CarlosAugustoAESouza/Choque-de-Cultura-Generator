@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<% include head %>
+</head>
+
+<body>
+	<div class="section-hero uk-background-blend-color-screen uk-background-top-center uk-background-cover uk-section-large1 cta" style="background-image: url(img/application/choque-de-cultura.jpg)" >
+		<nav class="uk-navbar-container uk-margin uk-navbar-transparent uk-light">
+			<% include nav %>
+		</nav>
+		<div class="uk-container hero highlight">
+			<% if(typeof(frases) != 'undefined') { %>
+			<p class="uk-text-lead uk-text-center uk-margin-large-top uk-light italic">"<%= frases %>"</p>
+			<h1 class="uk-heading-primary uk-text-center uk-margin-small-top uk-light">SOBRE</h1>
+			<% } %>
+		</div>
+	</div>
+
+	<div class="uk-container container-xs uk-section-center">
+		<div>
+			<div class="entry-content uk-margin-medium-top">
+				<p class="uk-text-lead justify">O Choque Generator™ é uma ferramenta extremamente útil que vai te ajudar com incríveis frases de efeito para você colocar no seu trabalho escolar, lindas mensagens para você mandar no grupo da família no WhatsApp e textos super complexos para você, que gosta de ser chato em todas as oportunidades, mandar aquele textão no Facebook.</p>
+				<p class="justify">O Choque Generator™ é uma brincadeira escrita em JavaScript que busca um punhado de frases do programa <a href="https://www.youtube.com/user/tvquase" target="_blank">Choque de Cultura</a> aleatoriamente. Nosso repositório está disponível no <a href="" target="_blank">GitHub</a> e você pode nos ajudar com sugestões, correção de bugs, incremento de funcionalidades e até mesmo com a adição de novas frases na base.</p>
+			</div>
+			<h3 class="uk-margin-medium-bottom center">Nossas Redes Sociais</h3>
+			<div class="uk-child-width-1-2@s text-dark" uk-grid>
+				<div class="center">
+					<a href="https://twitter.com/Carlao_O" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: twitter"></span>@Carlao_O</a><br>
+				</div>
+				<div class="center">
+					<a href="https://twitter.com/leandrolatini" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: twitter"></span>@leandrolatini</a><br>
+				</div>
+			</div>
+			<div class="uk-child-width-1-1@s text-dark" uk-grid>
+				<div class="center">
+					<a href="https://github.com/Carlao-O/Choque-de-Cultura-Generator" target="_blank"><span class="uk-margin-small-right" uk-icon="icon: github"></span>GitHub</a><br>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<% include actions %>
+
+	<% include footer %>
+</body>
+
+</html>
