@@ -1,3 +1,19 @@
+// Check: http://lou.wtf/cheet.js/
+$( document ).ready(function() {
+    var posiX = 0;
+    var posiY = 0;
+    var imgWidth = $("#top").width();
+    if (imgWidth > 1900) {
+        posiY = -450;
+    } else if (imgWidth > 1500) {
+        posiY = -350;
+    }
+    cheet('up up down down left right left right b a', function() {
+        $('#top').css("background-image", "url(img/application/cerginho-pereira-nunes.gif)");
+        $('#top').css("background-position", posiX+'px '+posiY+'px');
+    });
+});
+
 ! function(t, e) {
     "object" == typeof exports && "undefined" != typeof module ? module.exports = e(require("jquery")) : "function" == typeof define && define.amd ? define(["jquery"], e) : t.UIkit = e(t.jQuery)
 }(this, function(t) {
